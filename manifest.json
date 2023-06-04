@@ -1,0 +1,18 @@
+{
+    "name": "Paddo",
+    "manifest_version": 3,
+    "description": "Work Smarter. Emulate chatGPT3 prompts. Ask as you go!",
+    "version": "1.0.0",
+    "author": "Daniel Dozie",
+    "icons": {
+        "16":"/images/paddo16.png",
+        "24": "/images/paddo24.png",
+        "32": "/images/paddo32.png",
+        "48": "/images/paddo48.png",
+        "128": "/images/paddo128.png"
+    },
+    "action": {
+        "default_title": "Paddo ChatGPT3 Helper",
+        "default_popup": "./view/index.html"
+    }
+}

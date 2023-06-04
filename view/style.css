@@ -1,0 +1,130 @@
+html body {
+    background-color: #f3a427;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    aspect-ratio: 1/1;
+    height: 350px;
+    width: 300px;
+    border: unset;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+/*Italic color*/
+i {
+    color: #9571dc;
+}
+
+/*H1 color*/
+h1 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.heading {
+    color: #f3a427;
+    font-size: 14px;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: auto;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.hint-text {
+    text-align: center;
+    padding: 0px 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    color: #686e7d;
+    align-items: center;
+}
+
+textarea {
+    margin-top: 20px;
+    min-width: 85%;
+    max-width: 85%;
+    padding: 10px 10px;
+    border: .5px solid;
+    border-color: #BABCBF;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #21252c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea:focus {
+    outline: none !important;
+    border-color: #9571dc;
+    box-shadow: 0 0 10px #9571dc;
+}
+
+textarea::selection {
+    background: #9571dc;
+}
+
+button {
+    margin: 20px 0px 5px 0px;
+    padding: 7px 35px;
+    background-color: #9571dc;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+:disabled {
+    background-color: #E2E8F0;
+    color: #BABCBF;
+}
+
+
+
+/*Media query to auto switch theme on set user preference*/
+@media (prefers-color-scheme: dark) {
+    main {
+        background-color: #1A202C;
+    }
+
+    textarea {
+        background-color: #1c2330 !important;
+        color: #cfd5e3;
+        border-color: #303a4e;
+    }
+
+    .container {
+        color: #cfd5e3;
+    }
+
+    :disabled {
+        cursor: not-allowed;
+        background-color: #393d47;
+        color: #686e7d;
+    }
+}
