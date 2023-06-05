@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paddo: ChatGPT on the go!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="./style.css"/>
 </head>
 <body>
@@ -18,7 +21,25 @@
                 <i>Hint</i>: Paste/Type a command or question in the box below and get the quickest, shortest refined answer.
             </p>
             <textarea name="prompt" id="promptBox" rows="5" placeholder="Type something..."></textarea>
-            <button type="submit" id="submitButton" disabled>Ask Paddo</button>
+            <button type="submit" id="submitButton" disabled>Ask me</button>
+        </div>
+        <div class="answer-container">
+            <textarea cols="40" id="answer" rows="12" />
+            </textarea>
+            <div class="bottom-buttons">
+                <div class="button">
+                    <i class="fa-solid fa-retweet"></i>
+                    Spin
+                </div>
+                <div class="copy-button tooltip" id="copyButton">
+                    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                    <i class="fa-solid fa-clipboard" style="color: #ffffff; font-size: 24px;"></i>
+                </div>
+                <div class="button" id="returnButton">
+                <i class="fa-sharp fa-solid fa-arrow-rotate-left"></i>
+                    Return
+                </div>
+            </div>
         </div>
     </main>
 </body>
